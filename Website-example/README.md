@@ -1,6 +1,5 @@
-# Hello_World
- First repository versioned of GIT and GitHub via online course.
+# This Folfer will have all websites that I'll do while learning and trying new things after learning.
+---
 
- In this repository you will see my positives changes over time to reach my goal of Front-End Developer.
+You will see my positives changes over time to reach my goal of Front-End Developer.
  
- This line was add directly by Github website. +1
