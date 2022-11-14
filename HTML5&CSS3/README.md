@@ -1,7 +1,8 @@
 # This is my progress of learning HTML5 and CSS3 (Using Visual Studio Code)
----
+
 **PROGRESS 7/100%**
 ---
+
 ## Already learned:
     1. Paragraphs
     2. Favicon
