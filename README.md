@@ -3,15 +3,16 @@
 
 ---
 
-# All_Learned_Languages
+# Languages:
+---
+| Learned so far (and improving) | To learn |
+| ----------- | ----------- |
+| Python | JavaScript |
+| -- | HTML5 |
+| -- | CSS |
 
-### Languages learned so far (and improving):
-   1. Python
-
-### Languages to learn:
-   * JavaScript
-   * HTML5
-   * CSS
-### Frameworks/Library to learn:
-   * React
-   * Angular
+# Frameworks/Library to learn:
+---
+| Frameworks | Library |
+| --- | --- |
+| Angular | React |
