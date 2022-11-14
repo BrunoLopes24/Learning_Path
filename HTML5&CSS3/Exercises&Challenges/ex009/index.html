@@ -15,5 +15,21 @@
         <source media="(max-width: 1055px)" srcset="images/medium.png" type="image/png">
         <img src="images/big.png" alt="Big Pictures">
     </picture>
+    <h1>Play Audio</h1>
+    <!--<audio src="Audio/song.mp3" autoplay controls></audio>--> <!-- Good Formats MP3 OGG WAV -->
+    <p>Song:</p>
+    <audio preload="metadata" controls loop>
+        <source src="Audio/song.mp3" type="audio/mpeg">
+        <source src="Audio/song.ogg" type="audio/ogg">
+        <source src="Audio/song.wav" type="audio/wav">
+        <p>Unfortunately your browser do not support any media! We suggest update the version of your browser.</p>
+    </audio>
+    <p>Podcast:</p>
+    <audio preload="metadata" controls loop>
+        <source src="Audio/podcast.mp3" type="audio/mpeg">
+        <source src="Audio/podcast.ogg" type="audio/ogg">
+        <source src="Audio/podcast.wav" type="audio/wav">
+        <p>Unfortunately your browser do not support any media! We suggest update the version of your browser.</p>
+    </audio>
 </body>
 </html>
