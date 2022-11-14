@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media in HTML5</title>
+</head>
+<body>
+    <h1>Dynamic Images</h1>
+    <p>Open this website in any device or zoom in/out your browser</p>
+    
+    <picture>
+        <source media="(max-width: 800px)" srcset="images/small.png" type="image/png">
+        <source media="(max-width: 1055px)" srcset="images/medium.png" type="image/png">
+        <img src="images/big.png" alt="Big Pictures">
+    </picture>
+</body>
+</html>
