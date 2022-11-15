@@ -14,3 +14,5 @@
     5. Examples of Links and Lists
     6. Using Images, Audio and Video (internal and external)
     7. CSS Styles (beginner)
+
+![Working Hard](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
