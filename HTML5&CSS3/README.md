@@ -9,6 +9,6 @@
     3. Hierarchy of Titles
     4. Text Formatting
     5. Examples of Links and Lists
-    6. Using Images and Audio
-
+    6. Using Images, Audio and Video (internal and external)
+    7. CSS Styles (beginner)
 
