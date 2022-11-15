@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Images</title>
+</head>
+<body>
+    <h1>Flexible Images</h1>
+    <p>You are seeing a full picture right? Try to zoom in or zoom out your browser to see waht happen! 💪</p>
+    <picture>
+        <source media="(max-width: 850px)" srcset="images/blockchain_min.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="images/blockchain_medium.png" type="image/png">
+        <img src="images/blockchain_big.png" alt="blockchain_big">
+    </picture>
+
+</body>
+</html>
