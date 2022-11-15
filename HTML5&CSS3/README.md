@@ -1,6 +1,6 @@
 # This is my progress of learning HTML5 and CSS3 (Using Visual Studio Code)
 
-**PROGRESS 7/100%**
+**PROGRESS 8/100%**
 ---
 
 ## Already learned:
