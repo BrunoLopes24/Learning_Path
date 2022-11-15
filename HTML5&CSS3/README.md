@@ -1,6 +1,9 @@
 # This is my progress of learning HTML5 and CSS3 (Using Visual Studio Code)
+---
+&nbsp;&nbsp;&nbsp;&nbsp;**Progress mode:**
 
-**PROGRESS 8/100%**
+■□□□□□□□□□ 10%
+
 ---
 
 ## Already learned:
@@ -11,4 +14,3 @@
     5. Examples of Links and Lists
     6. Using Images, Audio and Video (internal and external)
     7. CSS Styles (beginner)
-
