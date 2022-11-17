@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+    HTML -> id == CSS -> #
+    HTML -> class == CSS -> .
+*/
+
+body {
+    background-color: #E296FF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #d031fc;
+    text-align: center;
+}
+
+h1#main {
+     color: #A0FF57;
+     text-align: center;
+     background-color: #87188F;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #b135d4;
+}
+
+.basic{
+    color: #3BFFD0;
+    text-decoration: underline;
+}
+
+.advanced {
+    color: #32B394;
+    text-decoration: overline underline;
+}
+
+h2#mid{
+    color: #FFDB6E;
+    text-decoration: line-through;
+}

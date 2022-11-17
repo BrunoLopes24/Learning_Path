@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover, Visit, Active (CSS)</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a
+        {
+            color: blueviolet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:visited { 
+            color: darkorange;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(0, 255, 128);
+        }
+
+        a:active {
+            color: darkgrey;
+        }
+        /* 
+        Pseudo -Class  ":hover"    Change the shape (CSS)
+        Pseudo -Element "::after"  Change the content (HTML)
+        */
+
+        .special {
+            background-color: lightgray;
+
+        }
+        .special::after {
+            content: ' ☚ ';
+            text-decoration: none;
+            font-weight: normal;
+            color: red;
+        }
+        .special::before {
+            content: ' ☛ ' ;
+            text-decoration: none;
+            font-weight: bold;
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalized Links</h1>
+    <ul>
+        <li><a href="https://github.com/BrunoLopes24" target="_blank" rel="next" class="special">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/brunolopes148/" target="_blank" rel="next" class="special">Linkdin</a></li>
+        <li><a href="https://www.ledger.com" target="_blank" rel="next">Ledger X</a></li>
+        <li><a href="#" target="_blank" rel="next" class="special">Projects</a></li>
+    </ul>
+</body>
+</html>
