@@ -2,7 +2,7 @@
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;**Progress mode:**
 
-■■■■■■■■ 100% (Still learning beyong already learned)
+■■■■■■■■ 100% (Still learning beyond already learned)
 
 ---
 
