@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('ch007/font/idroid.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #35C274;
+    text-align: justify;
+    margin: 1px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #35C274, #195C38);
+    padding: 5px;
+    margin: auto;
+}
+
+header h1, h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    border: 0.5px none black;
+    background-color: #3de689;
+    font-size: large;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 2.5px;
+    color: black;
+    margin-right: 30px;
+}
+nav a:hover {
+    background-color: #279759;
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    padding: 1px 20px 10px 20px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+}
+iframe{
+    object-fit: cover;
+}
+
+main h1 {
+    font-family: 'idroid', 'Courier New', serif;
+    color: #35C274;
+}
+
+main img {
+    width: 100%;
+}
+main p {
+    text-indent: 30px;
+}
+
+div.video {
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+main h2 {
+    font-family: 'idroid', 'Courier New', serif;
+    background-image: linear-gradient(to right, #3de689, white);
+    color: #267148;
+    padding-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #35C274;
+}
+
+aside {
+    background-color: #3de689;
+    border-radius: 10px;
+    padding: 0px 0px 2px 0px;
+}
+
+aside > a {
+    color: rgb(14, 118, 56);
+    font-weight: bolder;
+}
+
+aside > ul {
+    column-count: 2;
+    text-decoration: underline;
+}
+aside > h4 {
+    background-color: #38a96b;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1px;
+    text-align: center;
+}
