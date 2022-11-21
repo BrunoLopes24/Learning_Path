@@ -19,5 +19,6 @@
         * Fonts
         * Div, class, pseudo-class, pseudo-element
         * Box Models and their components (margin, padding, border)
+        * Background (Position, image, size, repeat, position, attachment)
 
 ![Working Hard](https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif)
