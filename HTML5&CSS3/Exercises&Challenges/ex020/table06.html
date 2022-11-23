@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTML5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 50vw;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        caption {
+            font-size: 1.5em;
+            border: 1px solid black;
+            padding: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: rgb(182, 0, 182);
+            color: white;
+        }
+        col.cname, .cage {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cname">
+            <col class="cgender">
+            <col class="cage">
+            <col class="cjob">
+        </colgroup>
+        <caption>Register</caption>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Age</th>
+            <th scope="col">Job</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>F</td>
+            <td>24</td>
+            <td>Journalist</td>
+        </tr>
+        <tr>
+            <td>Paulo</td>
+            <td>M</td>
+            <td>40</td>
+            <td>Cooker</td>
+        </tr>
+        <tr>
+            <td>Joana</td>
+            <td>25</td>
+            <td>F</td>
+            <td>Photographer</td>
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>24</td>
+            <td>M</td>
+            <td>Programmer</td>
+        </tr>
+        <tr>
+            <td>Andreia</td>
+            <td>50</td>
+            <td>F</td>
+            <td>Economist</td>
+        </tr>
+        <tr>
+            <td>Tally</td>
+            <td>35</td>
+            <td>F</td>
+            <td>Police Officer</td>
+        </tr>
+    </table>
+</body>
+</html>
