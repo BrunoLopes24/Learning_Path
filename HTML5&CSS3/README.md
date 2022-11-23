@@ -2,7 +2,7 @@
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;**Progress mode:**
 
-■■□□□□□□□□ 12%
+■■■□□□□□□□ 15%
 
 ---
 
@@ -20,6 +20,8 @@
         * Div, class, pseudo-class, pseudo-element
         * Box Models and their components (margin, padding, border)
         * Background (Position, image, size, repeat, position, attachment)
+        * Tables (tr,td,th,thead,tbody,tfoot,scope,colspan, rowspan) | Create a responsive Table
+        
 
 <p align="center">
    <img width="500" src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="Code hard, easy life">
