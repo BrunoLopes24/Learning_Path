@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+        a {
+            color:white;
+            font-size: 2em;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicked()"> Click here!</a>
+    <div id="exit"> </div>
+
+    <script>
+        function clicked() {
+            s = window.document.getElementById("exit")
+            s.innerHTML += '<p>You clicked!</p>'
+        }
+    </script>
+</body>
+</html>
