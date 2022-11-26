@@ -2,7 +2,7 @@
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;**Progress mode:**
 
-■■■□□□□□□□ 15%
+■■■■■□□□□□ 25%
 
 ---
 
@@ -20,7 +20,12 @@
         * Div, class, pseudo-class, pseudo-element
         * Box Models and their components (margin, padding, border)
         * Background (Position, image, size, repeat, position, attachment)
-        * Tables (tr,td,th,thead,tbody,tfoot,scope,colspan, rowspan) | Create a responsive Table
+    8. Tables (tr,td,th,thead,tbody,tfoot,scope,colspan, rowspan) | Create a responsive Table
+    9. Forms, Output, Fieldset, DataList, Select (Optgroup, Option)
+        Input Types:
+            * Text, Password, Submit, Reset, Number, Date, Time, Email 
+            * Tel, Radio, Checkbox, Color, Range, File, Msg
+            * Label, Placeholder, Required, Methods (GET | POST), minlengh|maxlengh, name|id, autocomplete, oninput
         
 
 <p align="center">
