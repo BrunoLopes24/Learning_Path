@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test FORM</h1>
+    <form action="register.php" method="get" autocomplete="on">
+        <h5>Escolha 2 números:</h5>
+        <p>
+            <label for="in1">Number one:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isum.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Number two:</label>
+            <input type="number" name="n1" id="in2" min="0" max="50" required oninput="isum.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isum">Sum:</label>
+            <output id="isum">0</output>
+        </p>
+
+        <p>
+            <label for="inum"> Number: </label>
+            <input type="range" name="num" id="inum" min="0" max="5" oninput="val.innerHTML= Number(inum.value)">
+            <output id="val">5</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

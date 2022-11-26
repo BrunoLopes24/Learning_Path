@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test FORM</h1>
+    <form action="register.php" method="get" autocomplete="on">
+        <p>
+            <label for="icity">City: </label>
+            <select name="city" id="icity">
+                <optgroup label="Norte">
+                    <option value="Porto">Porto</option>
+                    <option value="Braga">Braga</option>
+                </optgroup>
+
+                <optgroup label="Centro">
+                    <option value="Lisboa">Lisboa</option>
+                    <option value="Santarém">Santarém</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="Algarve">Faro</option>
+                    <option value="MGordo">Monte Gordo</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Job:</label>
+            <input type="text" name="prof" id="iprof" list="listjobs">
+            <datalist id="listjobs">
+                <option label="Cook"> Cooker </option>
+                <option label="Dev"> Developer</option>
+                <option label="Teach">Teatcher</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Message text:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

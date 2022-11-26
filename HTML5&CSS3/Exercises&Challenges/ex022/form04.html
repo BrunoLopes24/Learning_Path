@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testing FORM</h1>
+    <fieldset>
+        <legend>Personal Data</legend>
+        <form action="register.php" method="post">
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="iphone">Number Phone:</label>
+                <input type="tel" name="phone" id="iphone" maxlength="9" required>
+            </p>
+            <p>
+                <label for="ipass">Password:</label>
+                <input type="password" name="pass" id="ipass" maxlength="20" minlength="8" required>
+            </p>
+            <p>
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>

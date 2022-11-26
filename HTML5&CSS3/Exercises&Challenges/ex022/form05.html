@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORM TYPES</h1>
+    <form action="register.php" method="get">
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="imale"><label for="imale"> Male </label> <br>
+            <input type="radio" name="gender" id="ifem"><label for="ifem"> Female</label> <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Favourite Sports</legend>
+            <input type="checkbox" name="foot" id="ifoot"> <label for="ifoot">Football</label> <br>
+            <input type="checkbox" name="judo" id="ijudo"> <label for="ijudo">Judo</label> <br>
+            <input type="checkbox" name="Basket" id="ibasket"> <label for="ibasket">Basketball</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
