@@ -2,7 +2,7 @@
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;**Progress mode:**
 
-■■■■■□□□□□ 25%
+■■■■■■□□□□ 65%
 
 ---
 
@@ -26,7 +26,11 @@
             * Text, Password, Submit, Reset, Number, Date, Time, Email 
             * Tel, Radio, Checkbox, Color, Range, File, Msg
             * Label, Placeholder, Required, Methods (GET | POST), minlengh|maxlengh, name|id, autocomplete, oninput
-        
+    10. Media Queries
+            * Small screens (eg. iPhone 5, iPhone 6)
+            * Mid Screens (eg. Tablet)
+            * Big Screens (eg. Laptop, Desktops)
+            * Printers
 
 <p align="center">
    <img width="500" src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="Code hard, easy life">
