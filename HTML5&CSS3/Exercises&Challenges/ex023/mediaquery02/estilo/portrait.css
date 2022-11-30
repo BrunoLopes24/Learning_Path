@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*---- STYLE FOR PORTRAIT SCREENS ----*/
+
+body {
+    background-image: url(../images/cev-portrait.jpg);
+    background-position: center top;
+    
+}
+
+h1 {
+    font-size: 20px;
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+}

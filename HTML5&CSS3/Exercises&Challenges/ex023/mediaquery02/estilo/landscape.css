@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*---- STYLE FOR LANDSCAPE SCREENS ----*/
+
+body {
+    background-image: url(../images/cev-landscape.jpg);
+    background-position: left bottom;
+}
+
+h1 {
+    font-size: 25px;
+    padding-top: 30px;
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+}

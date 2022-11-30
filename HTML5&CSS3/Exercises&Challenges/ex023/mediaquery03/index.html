@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ALL SCREENS */
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }   
+
+        html, body { 
+            width: 100vw;
+            height: 100vh;
+            background-color: #233eff;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 0px #142292;
+            padding: 10px;
+        }
+        /* PORTRAIT SCREEN*/
+        @media screen and (orientation: portrait) {
+            body {
+                background-image: url(images/cev-portrait.jpg);
+                background-position: center top;
+            }
+        }
+        /* LANDSCAPE SCREEN*/
+        @media screen and (orientation: landscape){
+            body {
+            background-image: url(images/cev-landscape.jpg);
+            background-position: left bottom;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Change the display position to see what happens!</h1>
+</body>
+</html>
