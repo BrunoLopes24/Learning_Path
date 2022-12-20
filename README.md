@@ -8,8 +8,8 @@
 | Learned so far (and improving) | To learn |
 | ----------- | ----------- |
 | Python | JavaScript |
-| -- | HTML5 |
-| -- | CSS |
+| HTML5 | -- |
+| CSS | -- |
 
 # Frameworks/Library to learn:
 ---
