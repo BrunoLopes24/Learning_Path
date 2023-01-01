@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST STEP ON DOM</title>
+    <style>
+        html {
+            background-color: grey;
+            width: 100vw;
+            height: 100vh;
+        }
+        body {
+            background-color: darkorange;
+            border-radius: 20px;
+            text-align: center;
+            width: 80vw;
+            height: 70vh;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1 {
+            color: white;
+            background-color: rgb(34, 34, 235);
+            border-radius: 20%;
+            border: 1px solid;
+            width: 30vw;
+            position: relative;
+            margin: 3vh auto;
+        }
+        p {
+            font: normal 20pt arial;
+            margin: 10vh auto;
+        }
+        div#msg {
+            font: bold 15pt arial;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+            height: 15vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using DOM</h1>
+    <p>This is the result:</p>
+
+    <p>Learning <strong>DOM</strong> in <strong>JS</strong></p>
+    <div id="msg">Click here!</div>
+
+    <script>
+        var d = document.querySelector('div#msg')
+        d.style.color = 'red'
+
+        /*
+        var d = document.getElementsByTagName('div')[0]
+        d.innerText = 'OLÁ'
+        */
+
+
+        /* var d = document.getElementById('msg')
+        d.style.background = 'green'  // Change background color to green
+        d.innerText = 'Olá' // Change text using 'innetText' attribute
+        */
+
+       /* var p1 = window.document.getElementsByTagName('p')[0]  // Select the first paragraph
+        // window.document.write('The first paragraph is: ' + p1.innerText) */
+    </script>
+</body>
+</html>
