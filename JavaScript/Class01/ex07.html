@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum numbers</title>
+    <style> 
+    html {
+        background-color: grey;
+    }
+    body {
+        background-color: rgba(0, 0, 0, 0.519);
+        color: white;
+        position: relative;
+        height: 60vh;
+        border-radius: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+    }
+    h1 {
+        color: rgb(0, 213, 255);
+        text-align: center;
+        position: relative;
+        top: 10px;
+    }
+    div#sum {
+        border: 1px solid;
+        width: 50vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 10vh;
+    }
+
+    input {
+        position: relative;
+        overflow: hidden;
+    }
+
+    div#res {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: 6%;
+    }
+    </style>
+</head>
+<body>
+    <h1>Sum numbers</h1>
+    
+    <div id="sum">
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2"> 
+        <input type="button" value="Sum" onclick="sum()">
+    </div>
+    <div id="res">
+        Result
+    </div>
+    
+    <script>
+        function sum() {
+        var txtn1 = document.getElementById('txtn1')
+        var txtn2 = document.getElementById('txtn2')
+        var res = document.getElementById('res')
+        var n1 = Number(txtn1.value)  // Convert to number
+        var n2 = Number(txtn2.value)
+        var s = n1 + n2
+
+        res.innerHTML = s
+        }
+    </script>
+</body>
+</html>
