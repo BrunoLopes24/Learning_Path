@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine System</title>
+</head>
+<body>
+    <h1>Fine System</h1>
+
+    <div id="speed">
+        <p>Tell me which was your speed?: </p>
+        <p>Speed: <input type="number" name="vel" id="vel"> km/h</p>
+        <input type="button" value="Check" onclick="calculate()"> 
+        <div id="res"> 
+
+        </div>
+    </div>
+
+    <script>
+        function calculate() {
+            var txtvel = document.querySelector('input#vel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtvel.value)
+            if (vel > 50) {
+                res.innerHTML = `<p>You are driving above speed limit of <strong>50 Km/h</strong></p>`
+                res.innerHTML += `<p>This will result of being fined with <strong>150€</strong></p>`
+            } else {
+                res.innerHTML = `<p><br/> Your speed is <strong>${vel} km/h</strong></p>`
+                res.innerHTML += '<strong>Drive Safety!</strong>'
+            }
+        }
+    </script>
+</body>
+</html>
