@@ -2,7 +2,7 @@
 ---
 &nbsp;&nbsp;&nbsp;&nbsp;**Progress mode:**
 
-■■■■■■□□□□ 65%
+■■■■■■■■□ 95%
 
 ---
 
