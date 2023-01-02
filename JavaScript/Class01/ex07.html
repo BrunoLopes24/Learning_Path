@@ -11,6 +11,8 @@
     }
     body {
         background-color: rgba(0, 0, 0, 0.519);
+        display: flex;
+        flex-direction: column;
         color: white;
         position: relative;
         height: 60vh;
@@ -28,14 +30,15 @@
         top: 10px;
     }
     div#sum {
-        border: 1px solid;
         width: 50vw;
-        height: 20vh;
+        height: 10vh;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 10vh;
+        top: -10vh;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
     input {
@@ -48,7 +51,7 @@
         flex-direction: row;
         justify-content: center;
         position: relative;
-        top: 6%;
+        top: -25%;
     }
     </style>
 </head>
