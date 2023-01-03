@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language of Country</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: rgb(42, 42, 244);
+        }
+
+        body {
+            background-color: rgba(152, 251, 152, 0.644);
+            width: 90vw;
+            height: 90vh;
+            font: normal 15px Arial;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+
+        div#cont {
+            border: 1px solid;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            flex:1;
+            margin: 5vh auto;
+            position: relative;
+            top: 15vh;
+            width: 50%;
+            height: 50%;
+        }
+
+        div#box {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            top: -30px;
+        }
+        h1 {
+            color: white;
+            text-shadow: 0px 0px 10px black;
+            display: block;
+        }
+
+        input {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <h1>Language system</h1>
+        <div id="box">
+            <h3>Get info about the Language of Country:</h3>
+            <input type="text" name="lang" id="lang" placeholder="Country here!">
+            <input type="button" value="Info" onclick="info()">
+            <p id="res" style="text-align: center;"> . . . </p>
+        </div>
+    </div>
+
+    <script>
+        function info() {
+            var lang = document.querySelector('input#lang')
+            var res = document.querySelector('p#res')
+            if (lang.value == 'Portugal'){  // Use .value to check if the value of textbox is same as the value of function.value
+                res.innerHTML = "Portuguese!" 
+            } else {
+                res.innerHTML = "Other Languange!"
+            }
+        }
+    </script>
+</body>
+</html>
