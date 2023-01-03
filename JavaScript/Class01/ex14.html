@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hour day</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 99.7vh;
+        }
+        h1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            top: 10vh;
+        }
+        
+        div.hour {
+            box-shadow: 0px 0px 10px black;
+            border-radius: 10px;
+            background-color: white;
+            width: 60vw;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            position: relative;
+            top: 20vh;
+        }
+
+        div.hour > p#hour {
+            position: relative;
+            top: 5vh;
+            text-align: center;
+            font: bolder 19px "Times New Roman";
+        }
+
+        img {
+            display: none;
+            position: relative;
+            width: 20vw;
+            height: 40vh;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hour Day</h1>
+    <div class="hour">
+        <p id="hour">Tracking your Date System . . .</p>
+        <img id="m" src="image/morning.png" alt="morning">
+        <img id="e" src="image/evening.png" alt="evening">
+        <img id="n" src="image/night.png" alt="night">
+    </div>
+
+    <script>
+        var now = new Date()  
+        var hours = now.getHours()  // Get hour in system
+        var par = document.querySelector('p#hour')  // Get the paragraph on html
+        var morning = document.querySelector('img#m') // Get the image on html
+        var evening = document.querySelector('img#e') // Get the image on html
+        var night = document.querySelector('img#n') // Get the image on html
+
+        par.innerHTML = (`In your system is ${hours} o'clock!`)   // Change the paragraph on html to this text
+        
+        if (hours >= 6 && hours < 12) {
+            morning.style.display = 'flex'  // On HTML the img is "display = none" now is "flex"
+            document.body.style.backgroundColor = '#C2A319' // Change the backgroundcolor
+        } else if (hours >=12 && hours < 19){
+            evening.style.display = 'flex'
+            document.body.style.backgroundColor = '#F68623'
+        } else {
+            night.style.display = 'flex'
+            document.body.style.backgroundColor = '#6E6575'
+        }
+    </script>
+</body>
+</html>
