@@ -15,6 +15,7 @@
         html, body {
             width: 100vw;
             height: 99.8vh;
+            background-color: grey;
         }
 
         h1 {
@@ -59,10 +60,10 @@
     <h1>Age Verify</h1>
     <div class="cont">
         <div id="age">
-            Birth day : <input type="text" name="date" id="date" minlength="4"><br><br>
-            Sex : <input type="radio" name="sex" id="fem"><label for="ifem"> Female</label>
-                  <input type="radio" name="sex" id="male"><label for="imale"> Male</label><br><br>
-            <input type="button" value="Check" onclick="check()"> <br> <br>
+      Birth day : <input type="text" name="date" id="date" required><br><br>
+            Sex : <input type="radio" name="sex" id="fem" required><label for="ifem" > Female</label>
+                  <input type="radio" name="sex" id="male" required><label for="imale" > Male</label><br><br>
+                  <input type="button" value="Check" onclick="check()" > <br> <br>
 
             <p id="wait"> </p> <br>
             <p id="res"> </p>
@@ -85,7 +86,7 @@
             var resu = document.querySelector('p#res')
             var male = document.querySelector('input#male')
             var fem = document.querySelector('input#fem')
-            var year = document.querySelector('input#date').value
+            var year = document.querySelector('input#date').value  // Convert String to number 
 
             var by = document.querySelector('img#by')
             var bad = document.querySelector('img#bad')
@@ -96,8 +97,14 @@
             var gadul = document.querySelector('img#gadul')
             var gold = document.querySelector('img#gold')
             var cont = (system - year)
-            par.innerHTML = (`The year in your system is: ${system}`)
+            
+            if (year > system || cont > 100) {  // This will show a warning that the year is above the system
+                alert('Please enter a valid year')
+                return  // After a alert, the code below this will not be executed
+            }
 
+
+            par.innerHTML = (`The year in your system is: ${system}`)
             if (cont <= 12 && male.checked) {  //  [BOY] Start in  2011
                 resu.innerHTML = (`You have ${cont} year`)
                 document.body.style.backgroundColor = 'blue'
