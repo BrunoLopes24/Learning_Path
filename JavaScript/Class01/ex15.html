@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verify</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 99.8vh;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 10vh;
+        }
+        div.cont {
+            background-color: white;
+            box-shadow: 0px 0px 10px black;
+            border-radius: 10px;
+            position: relative;
+            top: 13vh;
+            width: 50vw;
+            height: 70vh;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        div.cont > div#age {
+            position: relative;
+            width: 50%;
+            margin: auto;
+            top: 5vh;
+        }
+        img {
+            display: none;
+            position: relative;
+            width: 15vw;
+            height: 30vh;
+            margin: auto;
+            top: 0vh;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Age Verify</h1>
+    <div class="cont">
+        <div id="age">
+            Birth day : <input type="text" name="date" id="date" minlength="4"><br><br>
+            Sex : <input type="radio" name="sex" id="fem"><label for="ifem"> Female</label>
+                  <input type="radio" name="sex" id="male"><label for="imale"> Male</label><br><br>
+            <input type="button" value="Check" onclick="check()"> <br> <br>
+
+            <p id="wait"> </p> <br>
+            <p id="res"> </p>
+        </div>
+        <img id="by" src="image/boyyoung.png" alt="Boy Young">
+        <img id="bad" src="image/boyadolesc.jpeg" alt="Boy Adole">
+        <img id="badul" src="image/boyadult.jpeg" alt="Boy Adult">
+        <img id="bold" src="image/boyolder.jpeg" alt="Boy Older">
+
+        <img id="gy" src="image/girlyoung.png" alt="Boy Young">
+        <img id="gad" src="image/girladolescente.jpeg" alt="Boy Adole">
+        <img id="gadul" src="image/girladult.jpeg" alt="Boy Adult">
+        <img id="gold" src="image/girlolder.jpeg" alt="Boy Older">
+    </div>
+
+    <script>
+        function check() {
+            var system = new Date().getFullYear()
+            var par = document.querySelector('p#wait')
+            var resu = document.querySelector('p#res')
+            var male = document.querySelector('input#male')
+            var fem = document.querySelector('input#fem')
+            var year = document.querySelector('input#date').value
+
+            var by = document.querySelector('img#by')
+            var bad = document.querySelector('img#bad')
+            var badul = document.querySelector('img#badul')
+            var bold = document.querySelector('img#bold')
+            var gy = document.querySelector('img#gy')
+            var gad = document.querySelector('img#gad')
+            var gadul = document.querySelector('img#gadul')
+            var gold = document.querySelector('img#gold')
+            var cont = (system - year)
+            par.innerHTML = (`The year in your system is: ${system}`)
+
+            if (cont <= 12 && male.checked) {  //  [BOY] Start in  2011
+                resu.innerHTML = (`You have ${cont} year`)
+                document.body.style.backgroundColor = 'blue'
+                by.style.display = 'block'
+            } else if (cont >12 && cont <18 && male.checked) {
+                resu.innerHTML = (`You have ${cont} year`)
+                document.body.style.backgroundColor = 'blue'
+                bad.style.display = 'block'
+            } else if (cont >=18 && cont < 59 && male.checked) {
+                resu.innerHTML = (`You have ${cont} year`)
+                document.body.style.backgroundColor = 'blue'
+                badul.style.display = 'block'
+            } else if (cont >=60 && male.checked) {
+                resu.innerHTML = (`You have ${cont} year`)
+                document.body.style.backgroundColor = 'blue'
+                bold.style.display = 'block'
+            }
+
+            if (cont <= 12 && fem.checked) {  //  [FEMALE] Start in  2011
+                resu.innerHTML = (`You have ${cont} year`)
+                document.body.style.backgroundColor = 'pink'
+                gy.style.display = 'block'
+            } else if (cont >12 && cont <18 && fem.checked) {
+                resu.innerHTML = (`You have ${cont} year`)
+                document.body.style.backgroundColor = 'pink'
+                gad.style.display = 'block'
+            } else if (cont >=18 && cont < 59 && fem.checked) {
+                resu.innerHTML = (`You have ${cont} year`)
+                document.body.style.backgroundColor = 'pink'
+                gadul.style.display = 'block'
+            } else if (cont >=60 && fem.checked) {
+                resu.innerHTML = (`You have ${cont} year`)
+                document.body.style.backgroundColor = 'pink'
+                gold.style.display = 'block'
+            }
+        }
+
+    </script>
+</body>
+</html>
